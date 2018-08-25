@@ -25,8 +25,21 @@
           <li><a href="info.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="search.html">Поиск</a></li>
-          <li><a href="login.html" class="login-link">Вход</li>
+          <li>
+            <a href="search.html">Поиск</a>
+            <div class="search-form">
+              <form></form>
+            </div>
+          </li>
+          <li>
+            <a href="login.html" class="login-link">Вход</a>
+            <div class="login-form">
+              <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
+              <form></form>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </li>
           <li><a href="basket.html">Корзина</a></li>
         </ul>
       </nav>
@@ -42,9 +55,9 @@
       <section class="main-slider">
         <h2 class="visually-hidden">Мороженое на любой вкус!</h2>
         <div class="main-slider-controls">
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
-            <label for="product-3">Третий</label>
+            <label for="slide1">Первый</label>
+            <label for="slide2">Второй</label>
+            <label for="slide3">Третий</label>
         </div>
         <ul class="main-slider-list">
           <li class="main-slider-item slide" id="slide1">
@@ -84,22 +97,22 @@
         <ul class="popular-products-list">
           <li class="popular-products-item products-item">
             <h3 class="product-title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-            <a href="#"><img src="#" class="product-picture" width="" height="" alt=""></a>
+            <a href="#"><img src="#" class="product-picture" width="267" height="267" alt="Сливочное с апельсином"></a>
             <p class="product-price">310 &#8381;<span class="unit-field">/кг</span></p>
           </li>
           <li class="popular-products-item products-item">
             <h3 class="product-title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-            <a href="#"><img src="#" class="product-picture" width="" height="" alt=""></a>
+            <a href="#"><img src="#" class="product-picture" width="267" height="267" alt="Сливочно-кофейное с шоколадом"></a>
             <p class="product-price">380 &#8381;<span class="unit-field">/кг</span></p>
           </li>
           <li class="popular-products-item products-item">
             <h3 class="product-title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-            <a href="#"><img src="#" class="product-picture" width="" height="" alt=""></a>
+            <a href="#"><img src="#" class="product-picture" width="267" height="267" alt="Сливочно-клубничное с присыпкой"></a>
             <p class="product-price">355 &#8381;<span class="unit-field">/кг</span></p>
           </li>
           <li class="popular-products-item products-item">
             <h3 class="product-title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-            <a href="#"><img src="#" class="product-picture" width="" height="" alt=""></a>
+            <a href="#"><img src="#" class="product-picture" width="267" height="267" alt="Сливочное крем-брюле с карамелью"></a>
             <p class="product-price">415 &#8381;<span class="unit-field">/кг</span></p>
           </li>
         </ul>
@@ -132,7 +145,7 @@
       <section class="main-contacts">
         <h2 class="visually-hidden">Где мы находимся и как с нами связаться</h2>
         <div class="main-map">
-          <img src="" width="" height="" alt="Мы на карте">
+          <img src="#" width="1200" height="430" alt="Мы на карте">
         </div>
         <div class="contacts-info">
           <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -143,18 +156,38 @@
           <a href="#" class="button contacts-button">Форма обратной связи</a>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
     </main>
+
+    <footer class="main-footer">
+      <div class="social-networks">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-networks-list">
+          <li><a href="#">Твиттер</a></li>
+          <li><a href="#">Инстаграм</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+      <div class="other-info">
+        <h2 class="visually-hidden">Полезная информация и документы</h2>
+        <ul class="other-info-list">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="copyright-info">
+        <h2 class="visually-hidden">Информация о разработчике</h2>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="108" height="39" alt="Логотип HTML Academy"></a>
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+      </div>
+    </footer>
+
+    <div class="feedback-form popup">
+      <h2>Мы обязательно вам ответим!</h2>
+      <form></form>
+    </div>
 
   </body>
 </html>
