@@ -49,7 +49,9 @@
               </form>
             </div>
           </li>
-          <li><a href="basket.html">Пусто</a></li>
+          <li>
+            <a href="basket.html" class="basket-link">Пусто</a>
+          </li>
         </ul>
       </nav>
       <div class="main-header-contacts">
@@ -147,7 +149,11 @@
         <section class="subscribe-info">
           <h3 class="visually-hidden">Подпишитесь на нас</h3>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form></form>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="user-email2">Адрес вашей электронной почты</label>
+            <input type="text" id="user-email2" name="email2" placeholder="Электронная почта">
+            <button type="submit" class="button subscribe-button">Отправить</button>
+          </form>
         </section>
       </div>
 
