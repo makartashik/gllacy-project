@@ -28,16 +28,27 @@
           <li>
             <a href="search.html">Поиск</a>
             <div class="search-form">
-              <form></form>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+
+              </form>
             </div>
           </li>
-          <li>
-            <a href="login.html" class="login-link">Вход</a>
-            <div class="login-form">
+          <li class="login-link">
+            <a href="login.html">Вход</a>
+            <span class="visually-hidden">Вход</span>
+            <div class="popup-form">
               <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-              <form></form>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="user-email">Адрес вашей электронной почты</label>
+                <input type="text" id="user-email" name="email" placeholder="Электронная почта">
+                <label class="visually-hidden" for="user-password">Ваш пароль</label>
+                <input type="password" id="user-password" name="password" placeholder="Пароль">
+                <div class="login-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+                <button type="submit" class="button login-button">Войти</button>
+              </form>
             </div>
           </li>
           <li><a href="basket.html">Пусто</a></li>
@@ -184,7 +195,7 @@
       </div>
     </footer>
 
-    <div class="feedback-form popup">
+    <div class="feedback-form popup-form">
       <h2>Мы обязательно вам ответим!</h2>
       <form></form>
     </div>
