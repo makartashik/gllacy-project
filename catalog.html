@@ -26,29 +26,39 @@
         </ul>
         <ul class="user-navigation">
           <li>
-            <a href="search.html">Поиск</a>
-            <div class="search-form">
-              <form></form>
-            </div>
+            <a href="search.html" class="search-link"><span class="visually-hidden">Поиск</span></a>
+            <form class="search-form popup-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="search-field">Введите информацию для поиска</label>
+              <input type="text" id="search-field" name="search" placeholder="Что ищем?">
+            </form>
           </li>
           <li>
             <a href="login.html" class="login-link">Вход</a>
-            <div class="login-form">
+            <div class="popup-form">
               <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-              <form></form>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="user-email">Адрес вашей электронной почты</label>
+                <input type="text" id="user-email" name="email" placeholder="Электронная почта">
+                <label class="visually-hidden" for="user-password">Ваш пароль</label>
+                <input type="password" id="user-password" name="password" placeholder="Пароль">
+                <div class="login-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+                <button type="submit" class="button login-button">Войти</button>
+              </form>
             </div>
           </li>
           <li>
-            <a href="basket.html">2 товара</a>
+            <a href="basket.html" class="basket-link basket-link-active">2 товара</a>
             <table class="basket-goods">
+              <h2 class="visually-hidden">Товары в корзине</h2>
               <tr class="basket-goods-item">
                 <td class="basket-item-delete">
-                  <span>x</span>
+                  <button type="button" class="button basket-delete-button">Удалить товар из корзины</button>
                 </td>
                 <td class="basket-item-picture">
-                  <img src="img/ice_cream1.jpg" width="33" height="33" alt="">
+                  <img src="img/ice_cream1.jpg" width="33" height="33" alt="Изображение товара">
                 </td>
                 <td class="basket-item-title">
                   <a href="#">Пломбир с апельсиновым джемом</a>
@@ -62,10 +72,10 @@
               </tr>
               <tr class="basket-goods-item">
                 <td class="basket-item-delete">
-                  <span>x</span>
+                  <button type="button" class="button basket-delete-button">Удалить товар из корзины</button>
                 </td>
                 <td class="basket-item-picture">
-                  <img src="img/ice_cream3.jpg" width="33" height="33" alt="">
+                  <img src="img/ice_cream3.jpg" width="33" height="33" alt="Изображение товара">
                 </td>
                 <td class="basket-item-title">
                   <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
