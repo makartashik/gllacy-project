@@ -298,3 +298,28 @@ img {
 .main-phone-number, .main-working-hours {
   line-height: 22px;
 }
+
+.social-networks-list, .other-info-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-networks-list  li {
+  background-color: #e6ebe9;
+  border: 2px solid #c2cec7;
+}
+
+.other-info {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.for-suppliers {
+  font-weight: 700;
+}
+
+.copyright-info {
+  font-size: 12px;
+  line-height: 18px;
+}
