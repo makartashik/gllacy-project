@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-navigation, .user-navigation {
+  list-style: none;
+}
+
+.site-navigation li {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.site-navigation > li > a {
+  padding: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+}
+
+.site-navigation > li > a:hover, .site-navigation > li > a:focus {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.site-navigation > li > a:active {
+  color: #333333;
+  background-color: #ffffff;
+  box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
+.site-navigation-item-current {
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  width: 142px;
+  background-color: #ffffff;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.catalog-list li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.catalog-list li:hover, .catalog-list li:focus {
+  background-color: #fbded7;
+}
+
+.catalog-list li:active {
+  background-color: #f6b5a5;
+}
+
+.catalog-list-current {
+  background-color: #d07058;
+}
+
+.catalog-list a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  border-radius: 0px;
+  color: #323232;
+}
+
+.catalog-list .catalog-list-title {
+  font-weight: 700;
+}
+
+.user-navigation li {
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.user-navigation > li > a {
+  padding: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #9db1a5;
+  border-radius: 20px;
+}
+
+.user-navigation > li > a:hover, .user-navigation > li > a:focus {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.main-header-contacts {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.main-header-contacts .contacts-phone-number {
+  font-size: 22px;
+  line-height: 24px;
+}
