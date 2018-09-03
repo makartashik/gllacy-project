@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1200px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  background-color: #849d8f;
 }
 
 a {
@@ -20,18 +18,75 @@ img {
   height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-wrap {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  background-color: #849d8f;
+}
+
+.main-header {
+  position: relative;
+  padding: 9px 27px 0;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-header-logo {
+  margin-right: 12px;
+}
+
+.nav-container {
+  display: flex;
+  width: 980px;
+  min-height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .site-navigation, .user-navigation {
+  padding: 0;
+  padding-top: 11px;
+  margin: 0;
   list-style: none;
+
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .site-navigation li {
+  margin-right: 4px;
   line-height: 18px;
   font-weight: 700;
 }
 
 .site-navigation > li > a {
   padding: 12px;
-  padding-top: 7px;
+  padding-top: 8px;
   padding-bottom: 7px;
   border-radius: 20px;
 }
@@ -53,6 +108,7 @@ img {
 }
 
 .catalog-list {
+  display: none;
   padding: 0;
   margin: 0;
   width: 142px;
@@ -94,7 +150,15 @@ img {
   font-weight: 700;
 }
 
+.user-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .user-navigation li {
+  margin-left: 10px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
@@ -112,13 +176,28 @@ img {
   background-color: #ffffff;
 }
 
+.popup-form {
+  display: none;
+}
+
 .main-header-contacts {
+  position: absolute;
+  top: 74px;
+  left: 1006px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
 }
 
+.main-header-contacts p {
+  margin: 0;
+}
+
 .main-header-contacts .contacts-phone-number {
+  margin-top: 4px;
   font-size: 22px;
   line-height: 24px;
 }
