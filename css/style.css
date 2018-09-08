@@ -243,7 +243,6 @@ input[type="radio"].visually-hidden {
 
 }
 
-
 .slide-title {
   width: 680px;
   padding: 0;
@@ -306,7 +305,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-
 .slide-toggle-1:checked ~ .page-wrap label[for="product-1"],
 .slide-toggle-2:checked ~ .page-wrap label[for="product-2"],
 .slide-toggle-3:checked ~ .page-wrap label[for="product-3"] {
@@ -350,6 +348,26 @@ input[type="radio"].visually-hidden {
   line-height: 44px;
 }
 
+.promo-button {
+  padding: 11px 23px;
+  margin-top: 26px;
+  margin-left: 374px;
+}
+
+.promo-item-second .promo-button {
+  padding: 10px 22px 11px;
+  padding-right: 21px;
+  margin-left: 350px;
+}
+
+.main-promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 27px;
+  margin: 0;
+}
+
 .promo-item {
   width: 560px;
   min-height: 229px;
@@ -366,11 +384,17 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item h3 {
+  margin: 0;
+  margin-top: 16px;
+  margin-left: 19px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 .promo-item p {
+  width: 515px;
+  margin-top: 15px;
+  margin-left: 19px;
   font-size: 18px;
   font-weight: 700;
 }
