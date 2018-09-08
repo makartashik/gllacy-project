@@ -8,6 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <input class="visually-hidden slide-toggle-1" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden slide-toggle-2" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden slide-toggle-3" type="radio" id="product-3" name="toggle">
+
     <div class="page-wrap">
 
     <header class="main-header">
@@ -72,24 +76,22 @@
       <section class="main-slider">
         <h2 class="visually-hidden">Мороженое на любой вкус!</h2>
         <div class="main-slider-controls">
-            <label for="slide1">Первый</label>
-            <label for="slide2">Второй</label>
-            <label for="slide3">Третий</label>
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+
         </div>
         <ul class="main-slider-list">
           <li class="main-slider-item slide" id="slide1">
             <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-            <img src="img/slide1.png" class="slide-picture" width="1045" height="881" alt="Рожок крем-брюле и рожок пломбир">
             <a href="#" class="button slide-button">Давайте оба!</a>
           </li>
           <li class="main-slider-item slide" id="slide2">
             <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
-            <img src="img/slide2.png" class="slide-picture" width="1045" height="881" alt="Рожок шоколадный пломбир и рожок лимонный сорбет">
             <a href="#" class="button slide-button">Давайте оба!</a>
           </li>
           <li class="main-slider-item slide" id="slide3">
-            <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
-            <img src="img/slide3.png" class="slide-picture" width="1045" height="881" alt="Рожок пломбир с помадкой и рожок щербет">
+            <h3 class="slide-title slide-title-3">Пломбир с помадкой и клубничный щербет</h3>
             <a href="#" class="button slide-button">Давайте оба!</a>
           </li>
         </ul>
