@@ -399,28 +399,116 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+.popular-products {
+  padding: 0 27px;
+}
+
 .products-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0;
+  padding-top: 34px;
   margin: 0;
   list-style: none;
 }
 
-.products-item:hover, .products-item:focus {
+.products-item {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  width: 267px;
+  min-height: 363px;
+  padding-top: 6px;
+}
+
+.hover-button-container {
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  height: 405px;
+  width: 293px;
   background-color: #a2b5aa;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.hover-button {
+  position: absolute;
+  left: 45px;
+  top: 343px;
+  padding: 11px 18px;
+  padding-top: 10px;
+}
+
+.products-item:hover .hover-button-container,
+.products-item:hover + .hover-button-container {
+  opacity: 1;
 }
 
 .products-item h3 {
+  position: relative;
+  padding: 0;
+  padding-top: 8px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
+  text-align: center;
+  z-index: 1;
+}
+
+.products-item::before {
+  content: " ";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 .product-price {
+  position: absolute;
+  left: 0;
+  bottom: 104px;
+  padding: 0;
+  margin: 0;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 600;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  z-index: 1;
 }
 
 .product-price .unit-field {
   font-size: 30px;
+  margin-left: 24px;
+}
+
+.price-currency {
+  position: absolute;
+  left: 75px;
+  top: 2px;
+}
+
+.product-picture {
+  position: relative;
+  z-index: 1;
+}
+
+.product-title {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.product-title:hover, .product-title:focus, 
+.product-title:active {
+  color: #ffbc9e;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
 .main-advantages {
