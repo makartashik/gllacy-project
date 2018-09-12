@@ -583,16 +583,36 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/thermometer.svg");
 }
 
+.additional-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 40px 27px;
+
+}
 
 .news-info {
-  width: 560px;
-  min-height: 220px;
+  min-width: 560px;
+  height: 220px;
+  margin-right: 26px;
   background-image: url("../img/strawberry_back.jpg");
   background-repeat: no-repeat;
   border-radius: 15px;
+  background-color: red;
+}
+
+.news-info-container {
+  width: 330px;
+  padding: 23px 0px 0px 20px;
+
 }
 
 .news-info h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
   color: #323232;
 }
@@ -602,12 +622,17 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 700;
   color: #323232;
-  border-bottom: 2px solid #323232;
+  text-decoration: underline;
+}
+
+.news-info a:hover, .news-info a:focus,
+.news-info a:active {
+  color: #ffbc9e;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
 .subscribe-info {
   width: 560px;
-  min-height: 220px;
   padding: 6px;
   color: #5a5a5a;
   background-image: url("../img/bg-post.svg");
@@ -616,8 +641,7 @@ input[type="radio"].visually-hidden {
 }
 
 .subscribe-form-wrap {
-  width: 548px;
-  min-height: 208px;
+  padding: 29px 10px 34px 20px;
   background-color: #f8f7f4;
   border-radius: 10px;
 }
@@ -625,6 +649,53 @@ input[type="radio"].visually-hidden {
 .subscribe-form-wrap h3 {
   padding: 0;
   margin: 0;
+}
+
+.subscribe-form-wrap p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-form input[type="text"] {
+  width: 368px;
+  padding: 10px 13px;
+  padding-bottom: 9px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+  background-color: #ffffff;
+  border: none;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.subscribe-form input[type="text"]::placeholder {
+  font-weight: 400;
+  color: #b2b2b2;
+}
+
+.subscribe-form input[type="text"]:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  padding: 9px 12px;
+  padding-bottom: 8px;
+}
+
+.subscribe-form input[type="text"]:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  padding: 9px 12px;
+  padding-bottom: 8px;
+  outline: none;
+}
+
+.subscribe-button {
+  padding: 9px 18px 10px;
+  margin-left: 8px;
 }
 
 .main-contacts {
