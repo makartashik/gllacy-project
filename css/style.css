@@ -587,7 +587,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 40px 27px;
+  padding: 40px 27px 39px;
 
 }
 
@@ -772,20 +772,70 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 13px 27px 21px;
+}
+
+.social-networks {
+  margin-top: 5px;
+}
+
 .social-networks-list, .other-info-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+.social-networks-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  margin-left: 2px;
+}
+
 .social-networks-list  li {
-  background-color: #e6ebe9;
-  border: 2px solid #c2cec7;
+  position: relative;
+  width: 37px;
+  height: 37px;
+  margin-right: 12px;
+  border: 2.5px solid #c2cec7;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .other-info {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3px;
+  margin-top: 13px;
   font-size: 13px;
   line-height: 18px;
+}
+
+.other-info-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.other-info-list li {
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.other-info::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
 }
 
 .for-suppliers {
@@ -795,4 +845,8 @@ input[type="radio"].visually-hidden {
 .copyright-info {
   font-size: 12px;
   line-height: 18px;
+}
+
+.copyright-info p {
+  margin: 0;
 }
