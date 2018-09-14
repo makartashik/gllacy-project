@@ -699,30 +699,77 @@ input[type="radio"].visually-hidden {
 }
 
 .main-contacts {
+  position: relative;
   width: 1200px;
 }
 
 .contacts-info {
-  width: 300px;
+  position: absolute;
+  top: 62px;
+  right: 27px;
+  width: 252px;
+  padding: 29px 25px 30px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
-.main-contacts-info {
+.contacts-info p {
+  margin: 0;
+}
+
+.contacts-info .main-contacts-info {
+  margin-bottom: 19px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.contacts-info .main-phone-number {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.contacts-info .main-working-hours {
+  margin-bottom: 24px;
+}
 .main-contacts-info a {
   color: #323232;
 }
 
+.main-contacts-info-title {
+  width: 155px;
+}
 .main-phone-number, .main-working-hours {
   line-height: 22px;
+}
+
+.contacts-button {
+  padding: 10px 27px 10px 28px;
+}
+
+.main-map::before {
+  content: "";
+  position: absolute;
+  top: 138px;
+  left: 266px;
+  width: 80px;
+  height: 140px;
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+}
+
+.main-map::after {
+  content: "";
+  position: absolute;
+  top: 168px;
+  left: 305px;
+  width: 182px;
+  height: 110px;
+  background-image: url("../img/pin-shadow.png");
+  background-repeat: no-repeat;
 }
 
 .social-networks-list, .other-info-list {
