@@ -58,6 +58,13 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slide3.png");
 }
 
+.inner-wrap {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  background-color: #849d8f;
+}
+
 .main-header {
   position: relative;
   padding: 9px 27px 0;
@@ -195,6 +202,10 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-form {
+  display: none;
+}
+
+.basket-popup {
   display: none;
 }
 
@@ -399,7 +410,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.popular-products {
+.popular-products, .creamy-products {
   padding: 0 27px;
 }
 
@@ -407,6 +418,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   padding-top: 34px;
   margin: 0;
@@ -461,7 +473,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
-.products-item::before {
+.popular-products-item::before {
   content: " ";
   position: absolute;
   width: 61px;
