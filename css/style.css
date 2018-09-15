@@ -236,6 +236,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -243,7 +244,8 @@ input[type="radio"].visually-hidden {
 
 .user-navigation li {
   margin-left: 10px;
-  margin-top: -1px;
+  margin-top: 2px;
+  height: 40px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -271,7 +273,59 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.search-link:hover path {
+.popup-form {
+  display: none;
+}
+
+.search-form {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 215px;
+  width: 341px;
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.search-form input[type="text"] {
+  width: 309px;
+  padding: 12px 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid rgba(153, 153, 153, 0.52);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-form input[type="text"]::placeholder {
+  font-weight: 400;
+  color: #b2b2b2;
+}
+
+.search-form input[type="text"]:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  padding: 11px 13px;
+}
+
+.search-form input[type="text"]:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  padding: 11px 13px;
+  outline: none;
+}
+
+.user-nav-search:hover .search-form,
+.user-nav-search:focus .search-form {
+  display: block;
+}
+
+.search-link:hover path,
+.search-link:focus path {
   fill: #000;
 }
 
@@ -290,17 +344,17 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/basket.svg");
 }
 
-.login-link:hover::before {
+.login-link:hover::before,
+.login-link:focus::before {
   background-image: url("../img/entrance.svg");
 }
 
-.basket-link:hover::before {
+.basket-link:hover::before,
+.basket-link:focus::before {
   background-image: url("../img/basket-black.svg");
 }
 
-.popup-form {
-  display: none;
-}
+
 
 .basket-popup {
   display: none;
