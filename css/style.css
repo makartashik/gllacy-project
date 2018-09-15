@@ -110,15 +110,17 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation > li > a {
-  padding: 12px;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  border-radius: 20px;
+  margin: 8px 12px 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .site-navigation > li > a:hover, .site-navigation > li > a:focus {
+  padding: 8px 12px 7px;
+  margin: 0;
   color: #333333;
   background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
 }
 
 .site-navigation > li > a:active {
@@ -127,24 +129,56 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
-.site-navigation-item-current {
+.site-navigation > li > .site-navigation-item-current {
+  padding: 8px 12px 7px;
+  margin: 0;
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 20px;
+}
+
+.site-navigation > li > .site-navigation-item-current:hover,
+.site-navigation > li > .site-navigation-item-current:focus {
   color: #ffffff;
   background-color: #d07058;
 }
 
+.main-catalog {
+  position: relative;
+  min-height: 30px;
+}
+
 .catalog-list {
   display: none;
+  position: absolute;
+  top: 30px;
+  left: -8px;
   padding: 0;
   margin: 0;
   width: 142px;
   background-color: #ffffff;
   list-style: none;
   border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
 }
 
 .catalog-list li {
+  width: 142px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.catalog-list li:first-child {
+  padding-top: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.catalog-list li:last-child {
+  padding-bottom: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .catalog-list li:hover, .catalog-list li:focus {
@@ -155,7 +189,12 @@ input[type="radio"].visually-hidden {
   background-color: #f6b5a5;
 }
 
-.catalog-list-current {
+.catalog-list .catalog-list-current {
+  background-color: #d07058;
+}
+
+.catalog-list .catalog-list-current:hover,
+.catalog-list .catalog-list-current:focus {
   background-color: #d07058;
 }
 
@@ -173,6 +212,27 @@ input[type="radio"].visually-hidden {
 
 .catalog-list .catalog-list-title {
   font-weight: 700;
+}
+
+.catalog-list::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 6px;
+  width: 128px;
+  height: 1px;
+  background-color: #c2cec7;
+}
+
+.main-catalog:hover .catalog-list,
+.main-catalog:focus .catalog-list {
+  display: block;
+  z-index: 10;
+}
+
+.main-catalog:hover .main-catalog a {
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .user-navigation {
