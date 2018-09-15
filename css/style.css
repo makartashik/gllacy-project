@@ -238,27 +238,64 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .user-navigation li {
   margin-left: 10px;
+  margin-top: -1px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
 
+.user-navigation li:first-child {
+  margin-top: 0;
+}
+
 .user-navigation > li > a {
-  padding: 17px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  position: relative;
+  padding: 7px 17px 8px 44px;
   background-color: #9db1a5;
   border-radius: 20px;
 }
 
-.user-navigation > li > a:hover, .user-navigation > li > a:focus {
+.user-navigation > li > .search-link {
+  padding: 11px 8px 5px;
+  box-sizing: border-box;
+}
+
+.user-navigation > li > a:hover,
+.user-navigation > li > a:focus {
   color: #323232;
   background-color: #ffffff;
+}
+
+.search-link:hover path {
+  fill: #000;
+}
+
+.login-link::before,
+.basket-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/entrance-white.svg");
+}
+
+.basket-link::before {
+  background-image: url("../img/basket.svg");
+}
+
+.login-link:hover::before {
+  background-image: url("../img/entrance.svg");
+}
+
+.basket-link:hover::before {
+  background-image: url("../img/basket-black.svg");
 }
 
 .popup-form {
