@@ -273,57 +273,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.popup-form {
-  display: none;
-}
-
-.search-form {
-  display: none;
-  position: absolute;
-  top: 45px;
-  right: 215px;
-  width: 341px;
-  padding: 20px 15px;
-  background-color: #f8f7f4;
-  box-sizing: border-box;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  z-index: 10;
-}
-
-.search-form input[type="text"] {
-  width: 309px;
-  padding: 12px 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #323232;
-  background-color: #ffffff;
-  border: 1px solid rgba(153, 153, 153, 0.52);
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.search-form input[type="text"]::placeholder {
-  font-weight: 400;
-  color: #b2b2b2;
-}
-
-.search-form input[type="text"]:hover {
-  border: 2px solid rgba(154, 154, 154, 0.52);
-  padding: 11px 13px;
-}
-
-.search-form input[type="text"]:focus {
-  border: 2px solid rgba(46, 136, 228, 0.52);
-  padding: 11px 13px;
-  outline: none;
-}
-
-.user-nav-search:hover .search-form,
-.user-nav-search:focus .search-form {
-  display: block;
-}
-
 .search-link:hover path,
 .search-link:focus path {
   fill: #000;
@@ -354,6 +303,106 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/basket-black.svg");
 }
 
+.popup-form {
+  display: none;
+}
+
+.search-form,
+.popup-login-form {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 215px;
+  width: 341px;
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.popup-login-form {
+  right: 110px;
+  width: 277px;
+  padding: 20px 17px 20px 19px;
+}
+
+.login-form {
+  position: relative;
+}
+
+.login-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 120px;
+}
+
+.login-links a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+  text-decoration-color: rgba(50, 50, 50, 0.3);
+}
+
+.login-links a:hover,
+.login-links a:focus,
+.login-links a:active {
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
+}
+
+.search-form input[type="text"],
+.popup-login-form input[type="text"],
+.popup-login-form input[type="password"] {
+  width: 309px;
+  padding: 10px 14px 8px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid rgba(153, 153, 153, 0.52);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.popup-login-form input[type="text"],
+.popup-login-form input[type="password"] {
+  width: 241px;
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"]::placeholder,
+.popup-login-form input[type="text"]::placeholder,
+.popup-login-form input[type="password"]::placeholder {
+  font-weight: 400;
+  color: #b2b2b2;
+}
+
+.search-form input[type="text"]:hover,
+.popup-login-form input[type="text"]:hover,
+.popup-login-form input[type="password"]:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  padding: 9px 13px 7px;
+}
+
+.search-form input[type="text"]:focus,
+.popup-login-form input[type="text"]:focus,
+.popup-login-form input[type="password"]:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  padding: 9px 13px 7px;
+  outline: none;
+}
+
+
+.user-nav-search:hover .search-form,
+.user-nav-search:focus .search-form,
+.user-nav-login:hover .popup-login-form,
+.user-nav-login:focus .popup-login-form {
+  display: block;
+}
 
 
 .basket-popup {
@@ -469,8 +518,17 @@ input[type="radio"].visually-hidden {
 
 .slide-toggle-1:checked ~ .page-wrap label[for="product-1"],
 .slide-toggle-2:checked ~ .page-wrap label[for="product-2"],
-.slide-toggle-3:checked ~ .page-wrap label[for="product-3"] {
+.slide-toggle-3:checked ~ .page-wrap label[for="product-3"],
+.slide-toggle-1:checked:hover ~ .page-wrap label[for="product-1"],
+.slide-toggle-2:checked:hover ~ .page-wrap label[for="product-2"],
+.slide-toggle-3:checked:hover ~ .page-wrap label[for="product-3"] {
   background-color: #ffffff;
+}
+
+.slide-toggle-1:hover ~ .page-wrap label[for="product-1"],
+.slide-toggle-2:hover ~ .page-wrap label[for="product-2"],
+.slide-toggle-3:hover ~ .page-wrap label[for="product-3"] {
+  background-color: #b2c1b7;
 }
 
 .button {
@@ -500,6 +558,11 @@ input[type="radio"].visually-hidden {
 .button:active {
   background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0px 2px 2px 0px rgba(172, 16, 0, 1);;
+}
+
+.login-button {
+  padding: 11px 25px;
+  border-radius: 20px;
 }
 
 .slide-button {
@@ -790,8 +853,8 @@ input[type="radio"].visually-hidden {
 
 .news-info a:hover, .news-info a:focus,
 .news-info a:active {
-  color: #ffbc9e;
-  text-decoration-color: rgba(255, 188, 158, 0.3);
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .subscribe-info {
