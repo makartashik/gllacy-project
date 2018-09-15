@@ -655,10 +655,10 @@ input[type="radio"].visually-hidden {
   left: -13px;
   height: 405px;
   width: 293px;
-  background-color: #a2b5aa;
+  background-color: rgba(230, 235, 233, 0.2);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  z-index: 0;
+  z-index: 10;
   opacity: 0;
 }
 
@@ -668,6 +668,7 @@ input[type="radio"].visually-hidden {
   top: 343px;
   padding: 11px 18px;
   padding-top: 10px;
+  z-index: 10;
 }
 
 .products-item:hover .hover-button-container,
@@ -684,7 +685,7 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   font-weight: 500;
   text-align: center;
-  z-index: 1;
+  z-index: 11;
 }
 
 .popular-products-item::before {
@@ -707,18 +708,24 @@ input[type="radio"].visually-hidden {
   line-height: 45px;
   font-weight: 600;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
-  z-index: 1;
+  z-index: 2;
 }
 
 .product-price .unit-field {
   font-size: 30px;
-  margin-left: 24px;
+  margin-left: 35px;
 }
 
-.price-currency {
+.product-price .unit-field::before {
+  content: "";
   position: absolute;
+  top: 1px;
   left: 75px;
-  top: 2px;
+  width: 40px;
+  height: 45px;
+  background-image: url("../img/ruble-with-shadow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .product-picture {
@@ -1019,17 +1026,33 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   margin-top: 12px;
-  margin-left: 2px;
 }
 
 .social-networks-list  li {
   position: relative;
-  width: 37px;
-  height: 37px;
-  margin-right: 12px;
-  border: 2.5px solid #c2cec7;
-  border-radius: 25px;
-  box-sizing: border-box;
+  margin-right: 11px;
+}
+
+.social-button {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: top;
+  opacity: 0.8;
+  background-color: transparent;
+  border: 3px solid rgba(230, 235, 233, 0.5);
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active  {
+  opacity: 1;
+  border: 3px solid rgba(230, 235, 233, 0.7);
+}
+
+.social-button:active path {
+  fill: #e6ebe9;
 }
 
 .other-info {
@@ -1049,23 +1072,35 @@ input[type="radio"].visually-hidden {
 }
 
 .other-info-list li {
+  display: block;
   margin-bottom: 5px;
   margin-right: 20px;
 }
 
-.other-info::before {
-  content: "";
+.other-info-list a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.other-info-list a:hover, .other-info-list a:focus,
+.other-info-list a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.other-info-list svg {
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: -10px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/heart.svg");
-  background-repeat: no-repeat;
 }
 
 .for-suppliers {
   font-weight: 700;
+}
+
+.for-suppliers a:hover + svg path,
+.for-suppliers a:focus + svg path,
+.for-suppliers a:active + svg path {
+  fill: #ffbc9e;
 }
 
 .copyright-info {
@@ -1075,4 +1110,15 @@ input[type="radio"].visually-hidden {
 
 .copyright-info p {
   margin: 0;
+}
+
+.copyright-info a:not(.logo-htmlacademy) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.copyright-info a:not(.logo-htmlacademy):hover,
+.copyright-info a:not(.logo-htmlacademy):focus,
+.copyright-info a:not(.logo-htmlacademy):active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
