@@ -111,9 +111,11 @@
 
      <main>
        <ul class="breadcrumbs-list">
-         <li><a href="index.html">Главная &#187;</a></li>
-         <li><a href="#">Каталог &#187;</a></li>
-         <li><a>Сливочное</a></li>
+         <li><a href="index.html">Главная</a></li>
+         <li>&#187;</li>
+         <li><a href="#">Каталог</a></li>
+         <li>&#187;</li>
+         <li><a class="breadcrumbs-item-current">Сливочное</a></li>
        </ul>
 
        <h1 class="catalog-page-title">Сливочное мороженое</h1>
@@ -123,12 +125,14 @@
          <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
            <fieldset>
              <legend>Сортировка:</legend>
-             <select name="sort-list">
-               <option value="popularity">по популярности</option>
-               <option value="low-priced">сначала недорогие</option>
-               <option value="high-priced">сначала дорогие</option>
-               <option value="fat-content">по жирности</option>
-             </select>
+             <div class="filter-sort-list-container">
+              <select name="sort-list" class="filter-sort-list">
+                <option value="popularity">по популярности</option>
+                <option value="low-priced">сначала недорогие</option>
+                <option value="high-priced">сначала дорогие</option>
+                <option value="fat-content">по жирности</option>
+              </select>
+            </div>
            </fieldset>
            <fieldset>
              <legend>Цена:</legend>
@@ -150,7 +154,7 @@
            </fieldset>
            <fieldset>
              <legend>Жирность:</legend>
-             <ul>
+             <ul class="filter-fat-list">
                <li class="filter-option">
                  <input class="visually-hidden filter-input filter-input-radio" type="radio" id="fat-zero" name="fat-content" value="0%">
                  <label for="fat-zero">0%</label>
@@ -171,7 +175,7 @@
            </fieldset>
            <fieldset>
              <legend>Наполнители:</legend>
-             <ul>
+             <ul class="filter-filler-list">
                <li class="filter-option">
                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="chocolate-filler-id" name="chocolate-filler" checked>
                  <label for="chocolate-filler-id">шоколадные</label>
