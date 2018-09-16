@@ -1164,6 +1164,7 @@ input[type="radio"].visually-hidden {
 .filters-form fieldset {
   padding: 0;
   border: none;
+  margin-right: 11px;
 }
 
 .filters-form legend {
@@ -1176,7 +1177,7 @@ input[type="radio"].visually-hidden {
 
 .filter-sort-list-container {
   cursor: pointer;
-  background-color: #aabcb2;
+  background-color: rgba(255, 255, 255, 0.2);
   background-image: url("../img/select-arrow2.svg");
   background-repeat: no-repeat;
   background-position: 167px 13px;
@@ -1243,6 +1244,85 @@ input[type="radio"].visually-hidden {
   border-radius: 20px;
 }
 
+.price-fieldset {
+  position: relative;
+  width: 230px;
+}
+
+.price-filter {
+  position: absolute;
+  top: -4px;
+  left: 55px;
+}
+
+.price-filter input[type="text"] {
+  width: 25px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.price-filter span {
+  margin-right: 5px;
+}
+
+.range-filter {
+  width: 218px;
+  min-height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: none;
+  border-radius: 20px;
+}
+
+.range-controls {
+  position: relative;
+  padding: 16px 20px 0px 21px;
+}
+
+.range-controls .scale {
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.range-controls .bar {
+  width: 118px;
+  height: 4px;
+  margin-left: 14px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+	width: 20px;
+	height: 22px;
+	top: 8px;
+	background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.range-toggle-min {
+  left: 35px;
+}
+
+.range-toggle-max {
+  left: 133px;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.fat-fieldset {
+  margin-left: 130px;
+}
 .main-footer {
   display: flex;
   flex-direction: row;
