@@ -257,19 +257,27 @@
       </div>
     </footer>
 
-    <div class="popup-form">
-      <h2>Мы обязательно вам ответим!</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="user-name">Представьтесь, пожалуйста</label>
-        <input type="text" id="user-name" name="user-name" placeholder="Как вас зовут?">
-        <label class="visually-hidden" for="user-email3">Адрес вашей электронной почты</label>
-        <input type="text" id="user-email3" name="email3" placeholder="Ваша почта для ответа?">
-        <label class="visually-hidden" for="user-text-field"></label>
-        <textarea id="user-text-field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
-        <button type="submit" class="button feedback-button">Отправить</button>
-      </form>
-      <button class="popup-close" type="button">Закрыть</button>
-    </div>
+    <section class="modal modal-feedback-wrap">
+      <div class="modal-feedback">
+        <h2 class="modal-feedback-title">Мы обязательно вам ответим!</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="feedback-form-item-container">
+            <label class="visually-hidden" for="user-name">Представьтесь, пожалуйста</label>
+            <input class="feedback-form-item-input" type="text" id="user-name" name="user-name" placeholder="Как вас зовут?">
+          </div>
+          <div class="feedback-form-item-container">
+            <label class="visually-hidden" for="user-email3">Адрес вашей электронной почты</label>
+            <input class="feedback-form-item-input" type="text" id="user-email3" name="email3" placeholder="Ваша почта для ответа?">
+          </div>
+          <div class="feedback-form-item-container">
+            <label class="visually-hidden" for="user-text-field"></label>
+            <textarea class="feedback-form-item-input" id="user-text-field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
+          </div>
+          <p><button type="submit" class="button feedback-button">Отправить</button></p>
+        </form>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </section>
   </div>
 
   </body>

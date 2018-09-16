@@ -1689,3 +1689,121 @@ input[type="checkbox"].visually-hidden {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
+
+.modal-feedback {
+  display: none;
+  padding: 16px 25px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 477px;
+  min-height: 442px;
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 30;
+}
+
+.modal-feedback-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-feedback .modal-close {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.modal-feedback .modal-close::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 18px;
+  height: 17px;
+  background-image: url("../img/cross-big.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-feedback .modal-close:focus::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.modal-feedback-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.feedback-form-item-container {
+  position: relative;
+}
+
+.feedback-form-item-input {
+  display: inline-block;
+  width: 267px;
+  padding: 9px 15px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.feedback-form-item-input::placeholder {
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+ textarea.feedback-form-item-input {
+  width: 100%;
+  min-height: 155px;
+  outline: none;
+  resize: none;
+}
+
+.feedback-form-item-input:hover {
+  padding: 8px 14px;
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.feedback-form-item-input:focus {
+  padding: 8px 14px;
+  outline: none;
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.modal-feedback p {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.feedback-button {
+  padding-left: 24px;
+  padding-right: 24px;
+}
