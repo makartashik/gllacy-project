@@ -215,7 +215,8 @@ label.visually-hidden {
   border-bottom-right-radius: 5px;
 }
 
-.catalog-list li:hover, .catalog-list li:focus {
+.catalog-list li:hover,
+.catalog-list li:focus {
   background-color: #fbded7;
 }
 
@@ -242,6 +243,10 @@ label.visually-hidden {
   padding-left: 20px;
   border-radius: 0px;
   color: #323232;
+}
+
+.catalog-list-current a {
+  color: #ffffff;
 }
 
 .catalog-list .catalog-list-title {
