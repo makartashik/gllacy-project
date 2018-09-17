@@ -1589,24 +1589,30 @@ label.visually-hidden {
 }
 
 .filler-fieldset {
-  width: 702px;
-}
-
-.filter-filler-list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-right: 20px;
+  width: 703px;
 }
 
 .filter-filler-list .filter-option {
-  padding-left: 15px;
+  margin-right: 20px;
+  margin-bottom: 4px;
+}
+
+.filter-filler-list .filter-option:nth-child(2) {
+  margin-right: 21px;
+}
+
+.filter-filler-list .filter-option:nth-child(3) {
+  margin-right: 24px;
+}
+
+.filter-filler-list .filter-option:nth-child(5) {
+  margin-right: 0px;
 }
 
 .filter-filler-list .filter-option label {
   position: relative;
   display: block;
-  padding-left: 16px;
+  padding-left: 32px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1618,7 +1624,7 @@ label.visually-hidden {
   content: "";
   position: absolute;
   top: 0px;
-  left: -15px;
+  left: 0px;
   width: 20px;
   height: 20px;
   background-image: url("../img/checkbox-off.svg");
@@ -1640,7 +1646,7 @@ label.visually-hidden {
   content: "";
   position: absolute;
   top: 0px;
-  left: -15px;
+  left: 0px;
   width: 23px;
   height: 20px;
   background-image: url("../img/checkbox-on.svg");
