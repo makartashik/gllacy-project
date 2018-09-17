@@ -1663,6 +1663,11 @@ label.visually-hidden {
   opacity: 0.4;
 }
 
+.filter-input:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-button {
   display: inline-block;
   font-family: "Roboto", Arial, sans-serif;
