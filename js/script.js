@@ -27,6 +27,9 @@ close.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.remove("modal-feedback-show");
   wrap.classList.remove("modal-feedback-wrap-show");
+  if (modal.classList.contains("modal-error")) {
+    modal.classList.remove("modal-error");
+    }
 });
 
 form.addEventListener("submit", function(evt) {
