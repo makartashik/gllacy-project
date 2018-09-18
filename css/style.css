@@ -1994,6 +1994,7 @@ label.visually-hidden {
   background-image: url("../img/cross-big.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 .modal-feedback .modal-close:focus::before {
@@ -2093,10 +2094,6 @@ label.visually-hidden {
 .feedback-button {
   padding-left: 24px;
   padding-right: 24px;
-}
-
-.modal-close {
-  cursor: pointer;
 }
 
 .modal-error {
