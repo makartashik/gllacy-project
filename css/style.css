@@ -1204,13 +1204,12 @@ label.visually-hidden {
 
 .main-contacts {
   position: relative;
-  width: 1200px;
 }
 
 .contacts-info {
   position: absolute;
   top: 62px;
-  right: 27px;
+  right: 379px;
   width: 252px;
   padding: 29px 25px 30px;
   font-size: 14px;
@@ -1257,26 +1256,16 @@ label.visually-hidden {
   padding: 10px 27px 10px 28px;
 }
 
-.main-map::before {
-  content: "";
-  position: absolute;
-  top: 138px;
-  left: 266px;
-  width: 80px;
-  height: 140px;
-  background-image: url("../img/pin.svg");
+.main-map {
+  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: auto 430px;
 }
 
-.main-map::after {
-  content: "";
-  position: absolute;
-  top: 168px;
-  left: 305px;
-  width: 182px;
-  height: 110px;
-  background-image: url("../img/pin-shadow.png");
-  background-repeat: no-repeat;
+.main-map iframe {
+  width: 100%;
+  height: 430px;
 }
 
 .breadcrumbs-list {
@@ -1590,7 +1579,7 @@ label.visually-hidden {
 
 .filter-filler-list .filter-option {
   margin-right: 20px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .filter-filler-list .filter-option:nth-child(2) {
@@ -1797,17 +1786,29 @@ label.visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 13px 27px 21px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 11px 27px 21px;
 }
 
 .main-footer-inner {
-  border-top: 1px solid rgba(252, 253, 252, 0.3);
+  position: relative;
   padding: 18px 0 21px;
-  margin: 0 27px;
+}
+
+.main-footer-inner::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 20px;
+  width: 1146px;
+  height: 1px;
+  background-color: rgba(252, 253, 252, 0.3)
 }
 
 .social-networks {
   margin-top: 5px;
+  margin-left: 27px;
 }
 
 .social-networks-list,
@@ -1917,6 +1918,7 @@ label.visually-hidden {
 .copyright-info {
   font-size: 12px;
   line-height: 18px;
+  margin-right: 27px;
 }
 
 .copyright-info p {
