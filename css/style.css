@@ -1955,6 +1955,8 @@ label.visually-hidden {
 
 .modal-feedback-show {
   display: block;
+  animation-name: move;
+  animation-duration: 0.7s;
 }
 
 .modal-feedback-wrap {
@@ -2117,5 +2119,23 @@ label.visually-hidden {
   60%,
   80% {
         transform: translate(-48%, -50%);
+  }
+}
+
+@keyframes move {
+  0% {
+      transform: translate(-500%, -50%);
+  }
+
+  70% {
+      transform: translate(-35%, -50%);
+  }
+
+  90% {
+      transform: translate(-60%, -50%);
+  }
+
+  100% {
+      transform: translate(-50%, -50%);
   }
 }
