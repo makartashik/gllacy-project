@@ -2092,3 +2092,30 @@ label.visually-hidden {
 .modal-close {
   cursor: pointer;
 }
+
+.modal-error {
+  animation-name: error;
+  animation-duration: 0.6s;
+}
+
+@keyframes error {
+  0%,
+  100% {
+        transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+        transform: translate(-52%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+        transform: translate(-48%, -50%);
+  }
+}

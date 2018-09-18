@@ -28,3 +28,17 @@ close.addEventListener("click", function(evt) {
   modal.classList.remove("modal-feedback-show");
   wrap.classList.remove("modal-feedback-wrap-show");
 });
+
+form.addEventListener("submit", function(evt) {
+  if (!userName.value || !userEmail.value || !userText.value) {
+    evt.preventDefault();
+    if (modal.classList.contains("modal-error")) {
+      modal.classList.remove("modal-error");
+    }
+    modal.offsetWidth;
+    modal.classList.add("modal-error");
+  } else {
+    localStorage.setItem("user-name", userName.value);
+    localStorage.setItem("email3", userEmail.value);
+  }
+});
