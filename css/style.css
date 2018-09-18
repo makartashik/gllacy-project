@@ -1369,7 +1369,7 @@ label.visually-hidden {
 
 .filter-sort-list {
   width: 193px;
-  max-height: 36px;
+  height: 36px;
   padding: 10px 14px 9px 14px;
   font-size: 16px;
   line-height: 18px;
@@ -1421,7 +1421,7 @@ label.visually-hidden {
 
 .price-filter {
   position: absolute;
-  top: -4px;
+  bottom: 39px;
   left: 55px;
 }
 
