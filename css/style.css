@@ -300,7 +300,7 @@ label.visually-hidden {
 .user-navigation .user-nav-link {
   position: relative;
   padding: 7px 17px 8px 44px;
-  background-color: #9db1a5;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
 
