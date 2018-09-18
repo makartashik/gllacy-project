@@ -1953,6 +1953,10 @@ label.visually-hidden {
   z-index: 30;
 }
 
+.modal-feedback-show {
+  display: block;
+}
+
 .modal-feedback-wrap {
   display: none;
   position: fixed;
@@ -1962,6 +1966,10 @@ label.visually-hidden {
   height: 100%;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-feedback-wrap-show {
+  display: block;
 }
 
 .modal-feedback .modal-close {
@@ -2079,4 +2087,8 @@ label.visually-hidden {
 .feedback-button {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.modal-close {
+  cursor: pointer;
 }
