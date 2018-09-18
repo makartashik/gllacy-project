@@ -699,7 +699,7 @@ label.visually-hidden {
 .slide-toggle-1:hover ~ .site-wrap label[for="product-1"],
 .slide-toggle-2:hover ~ .site-wrap label[for="product-2"],
 .slide-toggle-3:hover ~ .site-wrap label[for="product-3"] {
-  background-color: #b2c1b7;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .button {
