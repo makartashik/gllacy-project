@@ -1955,8 +1955,10 @@ label.visually-hidden {
 
 .modal-feedback-show {
   display: block;
-  animation-name: move;
-  animation-duration: 0.7s;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 .modal-feedback-wrap {
@@ -2096,14 +2098,17 @@ label.visually-hidden {
 }
 
 .modal-error {
-  animation-name: error;
-  animation-duration: 0.6s;
+  -webkit-animation-name: error;
+          animation-name: error;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
-@keyframes error {
+@-webkit-keyframes error {
   0%,
   100% {
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
   }
 
   10%,
@@ -2111,31 +2116,84 @@ label.visually-hidden {
   50%,
   70%,
   90% {
-        transform: translate(-52%, -50%);
+        -webkit-transform: translate(-52%, -50%);
+                transform: translate(-52%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-        transform: translate(-48%, -50%);
+        -webkit-transform: translate(-48%, -50%);
+                transform: translate(-48%, -50%);
+  }
+}
+
+@keyframes error {
+  0%,
+  100% {
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+        -webkit-transform: translate(-52%, -50%);
+                transform: translate(-52%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+        -webkit-transform: translate(-48%, -50%);
+                transform: translate(-48%, -50%);
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+      -webkit-transform: translate(-500%, -50%);
+              transform: translate(-500%, -50%);
+  }
+
+  70% {
+      -webkit-transform: translate(-35%, -50%);
+              transform: translate(-35%, -50%);
+  }
+
+  90% {
+      -webkit-transform: translate(-60%, -50%);
+              transform: translate(-60%, -50%);
+  }
+
+  100% {
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
   }
 }
 
 @keyframes move {
   0% {
-      transform: translate(-500%, -50%);
+      -webkit-transform: translate(-500%, -50%);
+              transform: translate(-500%, -50%);
   }
 
   70% {
-      transform: translate(-35%, -50%);
+      -webkit-transform: translate(-35%, -50%);
+              transform: translate(-35%, -50%);
   }
 
   90% {
-      transform: translate(-60%, -50%);
+      -webkit-transform: translate(-60%, -50%);
+              transform: translate(-60%, -50%);
   }
 
   100% {
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
   }
 }
